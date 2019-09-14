@@ -1,23 +1,24 @@
 // This program calculates a person's height in feet (') and inches (").
 #include <iostream>
-int main ()
+int main()
 {
   int inches;
   int feet;
   int moduleinch;
-// Asks for person in inches
-std::cout << "How tall is this person in inches?\n";
-std::cin  >> inches;
 
-// Converts the inches to feet.
-feet = inches / 12;
+  // Asks for person in inches
+  std::cout << "How tall is this person in inches?\n";
+  std::cin  >> inches;
 
-//Convers feet to inches.
-moduleinch = inches % 12;
+  // Converts the inches to feet.
+  feet = inches / 12;
 
-//Displays the feet of the person.
-std::cout << "This person is" <<feet<< "\'" <<moduleinch<< "\"";
+  //Convers feet to inches.
+  moduleinch = inches % 12;
 
-return 0;
+  //Displays the feet of the person.
+  std::cout << "This person is " << feet << "\'" << moduleinch << "\"";
+
+  return 0;
 
 }
